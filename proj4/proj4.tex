@@ -1,0 +1,70 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage{times}
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks = true, hypertexnames = false}
+
+\begin{document}
+
+\begin{titlepage}
+		\begin{center}
+			\Huge
+			\textsc{Vysoké učení technické v Brně} \\
+			\huge
+			\textsc{Fakulta informačních technologií} \\
+			\vspace{\stretch{0.382}}
+			\LARGE
+			Typografie a publikování\,--\,4. projekt \\
+			\Huge
+			Bibliograf{}ické citace
+			\vspace{\stretch{0.618}}
+		\end{center}
+
+		{\Large
+			\today
+			\hfill
+			Vojtěch Jurka
+		}
+	\end{titlepage}
+	
+	
+
+\section{\LaTeX}
+\LaTeX\ je balík maker programu \TeX, který umožňuje autorům sázet díla ve vysoké typografické kvalitě. Jeho aktuální verze je označena \LaTeX\ 2$\epsilon$. Byl původně napsán Lesliem Lamportem, který o něm napsal i knihu \cite{lamport}. \LaTeX\ užívá programu \TeX\ jako sázecího stroje. Pro více základních a stručných informací o tomto programu, viz \cite{wiki} a \cite{martinek}.
+
+\subsection{Používání \LaTeX u}
+Práce s \LaTeX em může laikovi připomínat programování, ačkoli k němu má celkem daleko. Je to tak kvůli stylu práce s tímto programem, jež sestává ze tří kroků, kterými jsou psaní a úprava zdrojového textu, jeho následný překlad, při němž probíhá sázení a konečným prohlížením vysázeného dokumentu. O bližších informacích o~překladu a sázení pojednává \cite{rybicka}.
+
+\subsection{Dělení dokumentu}
+Dokument se v \LaTeX u dělí na 2 části. Tou první je hlavička, neboli preambule. Druhou částí je už samotný text. Více informací - \cite{root}.
+
+\subsection{Matematická sazba}
+Sazba jakýchkoli vzorců a matematiky celkově je hlavní doménou \LaTeX u. Pro sázení matematických textů a vzorců jsou k dispozici různá prostředí, jak se můžeme dočíst v \cite{math}. Zde máme několik příkladů vysázených matematických rovnic:
+
+$$
+l = \frac{2b^2}{a} = 2a(e^2-1)
+$$
+
+$$
+\frac{(\hat{l} + \hat{i} + \hat{k})}{\sqrt{3}}
+$$
+
+$$
+\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1
+$$
+
+
+Tyto a podobné rovnice lze nalézt v publikacích jako je \cite{series}, \cite{frac} a \cite{matikacz}.
+
+\subsection{Výhody a nevýhody \LaTeX u}
+\LaTeX má mnoho výhod, kvůli kterým je dobré ho používat. Ty hlavní jsou typografická preciznost, kterou disponuje a také již zmiňovaná velice vyvinutá sazba matematiky. Jeho hlavní nevýhodou je  počáteční potřeba se ho naučit používat, hlavně jeho syntax. Není tak intuitivní jako běžné textové editory. Přináší to s sebou střet dvou potřeb. \LaTeX\ je vhodnější pro tvorbu delších, strukturově a sazbově složitějších dokumentů, zatímco běžné grafické textové editory jsou vhodnější pro krátké a jednoduché dokumenty díky své jednoduchosti. Jeho další nevýhodou je fakt, že není tak rozšířený a na většině zařízení nainstalovaný není. Naproti tomu je ale dostupný pro většinu operačních systémů, a například narozdíl od Wordu, je zcela zdarma, jak uvádí \cite{vyhody}.
+
+\newpage
+	\bibliographystyle{czechiso}
+	\renewcommand{\refname}{Literatura}
+	\bibliography{proj4}
+
+\end{document}
